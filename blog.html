@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="sticky top-0 mb-16">
+        <nav class="bg-slate-300">
+            <div  class="w-10/12 m-auto  flex justify-between items-center py-5">
+                <a class=" h-10 w-20 rounded-lg font-semibold bg-lime-300 flex items-center justify-center" href="index.html">Home</a>
+             <div class="flex items-center gap-3">         
+                <span><img src="./images/logo.png" alt=""></span>
+                <p class="font-bold">Donate Bangladesh</p>
+             </div>
+             <div class="flex gap-2 items-center">
+                <img src="./images/coin.png" alt="">
+                <p class="font-bold" id="available-tk">10000</p>
+                <p class="font-bold">BDT</p>
+             </div>
+            </div>
+        </nav>
+    </header>
+    <main class="w-10/12 m-auto ">
+        <div class="flex ">
+            <h2 class="text-4xl font-semibold mb-8">Important FAQ</h2>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
+              </svg>
+        </div>
+        <div class="collapse collapse-arrow border rounded-none">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+            <div class="collapse-content">
+              <p class="text-justify">The Document Object Model (DOM) is a programming interface that represents the structure of HTML documents as a tree of objects. Each element, attribute, and text is a node in this tree. The DOM allows developers to manipulate the content and structure of web pages dynamically using JavaScript, enabling interactivity and responsiveness in web applications.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow border rounded-none">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">How do you select a element from the DOM?</div>
+            <div class="collapse-content">
+              <p class="text-justify">
+                The Document Object Model (DOM) provides several methods for selecting elements in a web document. getElementById selects a single element by its unique ID, while getElementsByClassName retrieves all elements with a specific class name, returning a live HTMLCollection. getElementsByTagName selects all elements of a given tag type, also returning a live collection. For more versatile selections, querySelector fetches the first element matching a CSS selector, and querySelectorAll retrieves all matching elements as a static NodeList. These methods facilitate efficient access and manipulation of DOM elements in web development</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow border rounded-none">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM. and whyis it useful?</div>
+            <div class="collapse-content">
+              <p class="text-justify">
+                Event delegation is a method in the DOM that involves adding a single event listener to a parent element instead of multiple listeners on each child element. When an event occurs on a child, it bubbles up to the parent, allowing the parent to handle the event. This technique enhances performance by minimizing the number of listeners, automatically accommodates newly added children, and streamlines event management by keeping the code cleaner and more efficient.</p>
+            </div>
+            <div class="collapse collapse-arrow border rounded-none">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using thd DOM?</div>
+                <div class="collapse-content">
+                  <p class="text-justify">
+                    Element attributes and styles can be manipulated in the DOM using various methods. An attribute can be accessed using getAttribute('attributeName'), changed with setAttribute('attributeName', 'newValue'), and deleted with removeAttribute('attributeName'). For styles, a property can be retrieved using window.getComputedStyle(element).propertyName, modified by setting element.style.propertyName = 'value', and removed with element.style.removeProperty('property-name'). These methods allow for dynamic updates to the functionality and appearance of elements on a webpage. And using classList provides a straightforward way to manage classes without affecting other attributes, making it easy to manipulate an element's styling and behavior.</p>
+                </div>
+          </div>
+    </main>
+    
+</body>
+</html>

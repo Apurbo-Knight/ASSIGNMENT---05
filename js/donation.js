@@ -16,6 +16,7 @@ document.getElementById('btn-donate-first').addEventListener('click',function(){
     document.getElementById('available-tk').innerText = remainTaka;
 
     // history section
+    document.getElementById('history-section').classList.add('hidden');
     const historyItem = document.createElement('div');
     historyItem.className = 'border rounded-lg p-6 mb-5';
     historyItem.innerHTML = `
@@ -46,6 +47,7 @@ document.getElementById('btn-donate-second').addEventListener('click',function()
     document.getElementById('available-tk').innerText = remainTaka;
     
     // history section
+    document.getElementById('history-section').classList.add('hidden');
     const historyItem = document.createElement('div');
     historyItem.className = 'border rounded-lg p-6 mb-5';
     historyItem.innerHTML = `
@@ -76,6 +78,7 @@ document.getElementById('btn-donate-third').addEventListener('click',function(){
     document.getElementById('available-tk').innerText = remainTaka;
     
     // history section
+    document.getElementById('history-section').classList.add('hidden');
     const historyItem = document.createElement('div');
     historyItem.className = 'border rounded-lg p-6 mb-5';
     historyItem.innerHTML = `
@@ -102,6 +105,8 @@ historyBtn.addEventListener('click',function(){
 
     document.getElementById('donation-section').classList.add('hidden')
     document.getElementById('history-section').classList.remove('hidden')
+
+    document.getElementById('footer').classList.add('hidden')
 
 })
 
