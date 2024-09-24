@@ -31,7 +31,7 @@
                 <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
               </svg>
         </div>
-        <div class="collapse collapse-arrow border rounded-none">
+          <div class="collapse collapse-arrow border rounded-none">
             <input type="radio" name="my-accordion-2" checked="checked" />
             <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
             <div class="collapse-content">
@@ -53,14 +53,15 @@
               <p class="text-justify">
                 Event delegation is a method in the DOM that involves adding a single event listener to a parent element instead of multiple listeners on each child element. When an event occurs on a child, it bubbles up to the parent, allowing the parent to handle the event. This technique enhances performance by minimizing the number of listeners, automatically accommodates newly added children, and streamlines event management by keeping the code cleaner and more efficient.</p>
             </div>
-            <div class="collapse collapse-arrow border rounded-none">
-                <input type="radio" name="my-accordion-2" />
-                <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using thd DOM?</div>
-                <div class="collapse-content">
-                  <p class="text-justify">
-                    Element attributes and styles can be manipulated in the DOM using various methods. An attribute can be accessed using getAttribute('attributeName'), changed with setAttribute('attributeName', 'newValue'), and deleted with removeAttribute('attributeName'). For styles, a property can be retrieved using window.getComputedStyle(element).propertyName, modified by setting element.style.propertyName = 'value', and removed with element.style.removeProperty('property-name'). These methods allow for dynamic updates to the functionality and appearance of elements on a webpage. And using classList provides a straightforward way to manage classes without affecting other attributes, making it easy to manipulate an element's styling and behavior.</p>
-                </div>
           </div>
+          <div class="collapse collapse-arrow border rounded-none min-w-36 grid grid-cols-1">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using thd DOM?</div>
+            <div class="collapse-content">
+              <p class="text-justify">
+                Element attributes and styles can be manipulated in the DOM using various methods. An attribute can be accessed using getAttribute('attributeName'), changed with setAttribute('attributeName', 'newValue'), and deleted with removeAttribute('attributeName'). For styles, a property can be retrieved using window.getComputedStyle(element).propertyName, modified by setting element.style.propertyName = 'value', and removed with element.style.removeProperty('property-name'). These methods allow for dynamic updates to the functionality and appearance of elements on a webpage. And using classList provides a straightforward way to manage classes without affecting other attributes, making it easy to manipulate an element's styling and behavior.</p>
+            </div>
+          </div> 
     </main>
     
 </body>
