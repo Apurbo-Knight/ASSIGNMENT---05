@@ -2,6 +2,7 @@
 document.getElementById('btn-donate-first').addEventListener('click',function(){
     let donation = getDonatedValueById('input-first-amount');
     const availableTk = number('available-tk');
+    // Validation start***************************************************************************
     if(donation <= 0 || isNaN(donation) ){
         alert('Invalid Donation Amount');
         return;
@@ -10,6 +11,8 @@ document.getElementById('btn-donate-first').addEventListener('click',function(){
         alert('Insufficient Balance')
         return;
     }
+    // Validation end***************************************************************************
+
     const donationNumber = parseFloat(getDonatedValueById('input-first-amount'));
 
     const firstDonation = number('first-donated-tk');
@@ -35,6 +38,7 @@ document.getElementById('btn-donate-first').addEventListener('click',function(){
 document.getElementById('btn-donate-second').addEventListener('click',function(){
     const donation = getDonatedValueById('input-second-amount');
     const availableTk = number('available-tk');
+    // Validation start***************************************************************************
     if(donation <= 0 || isNaN(donation)){
         alert('Invalid Donation Amount');
         return;
@@ -43,6 +47,8 @@ document.getElementById('btn-donate-second').addEventListener('click',function()
         alert('Insufficient Balance')
         return;
     }
+    // Validation end***************************************************************************
+
     const donationNumber = parseFloat(getDonatedValueById('input-second-amount'));
     const firstDonation = number('second-donated-tk');
     const newDonatedValue = firstDonation + donationNumber;
