@@ -1,3 +1,5 @@
+
+
 function getDonatedValueById(id){
     const donation = document.getElementById(id).value;
     return donation;
