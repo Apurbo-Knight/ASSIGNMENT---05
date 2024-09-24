@@ -1,83 +1,81 @@
-// const donationNumberOne = parseFloat(getDonatedValueById('input-first-amount'));
-//     if(donationNumberOne < 0 || isNaN(donationNumberOne)){
-//         return alert('invalid input');   
-//     }
-
-//     const availableTk = number('available-tk');
-//     if(availableTk < donationNumberOne){
-//         return alert('Insufficient balance');
-//     }
 
 
 
 document.getElementById('btn-donate-first').addEventListener('click',function(){
     
+    const donationNumber = parseFloat(getDonatedValueById('input-first-amount'));
+    const availableTk = number('available-tk');
+    if(donationNumber <= 0 || isNaN(donationNumber)){
+        alert('Invalid Donation Amount');
+        return;
+    }
+    if(donationNumber > availableTk){
+        alert('Insufficient Balance')
+        return;
+    }
 
-    const donationNumberOne = parseFloat(getDonatedValueById('input-first-amount'));
-    if(donationNumberOne < 0 || isNaN(donationNumberOne)){
-                alert('invalid input');   
-                return;
-            }
-    else{
-        const firstDonation = number('first-donated-tk');
+    const firstDonation = number('first-donated-tk');
 
-    const newDonatedValue = firstDonation + donationNumberOne;
+    const newDonatedValue = firstDonation + donationNumber;
 
     document.getElementById('first-donated-tk').innerText = newDonatedValue;
 
-    const availableTk = number('available-tk');
-    if(availableTk < donationNumberOne){
-                return alert('Insufficient balance');
-            }
-
-    const remainTaka = availableTk - donationNumberOne;
+    
+    const remainTaka = availableTk - donationNumber;
 
     document.getElementById('available-tk').innerText = remainTaka;
+
+    document.getElementById('my_modal_1').showModal();
 
     // history section
     document.getElementById('history-section').classList.add('hidden');
     const historyItem = document.createElement('div');
     historyItem.className = 'border rounded-lg p-6 mb-5';
     historyItem.innerHTML = `
-    <p class="font-bold mb-5">${donationNumberOne} Taka is Donated for Flood Relief at Noakhali, Bangladesh</p>
+    <p class="font-bold mb-5">${donationNumber} Taka is Donated for Flood Relief at Noakhali, Bangladesh</p>
     <p class="text-gray-500 text-xs">Date :${new Date()}</p>
     `;
 
     const historyContainer = document.getElementById('history-section');
     historyContainer.insertBefore(historyItem, historyContainer.firstChild);
-    }
-
-    
 })
 
 
 
 document.getElementById('btn-donate-second').addEventListener('click',function(){
 
-    const donationNumberTwo = parseFloat(getDonatedValueById('input-second-amount'));
-    if(donationNumberTwo < 0 || isNaN(donationNumberTwo)){
-        return alert('invalid input');   
+
+    const donationNumber = parseFloat(getDonatedValueById('input-second-amount'));
+    const availableTk = number('available-tk');
+    if(donationNumber <= 0 || isNaN(donationNumber)){
+        alert('Invalid Donation Amount');
+        return;
     }
+    if(donationNumber > availableTk){
+        alert('Insufficient Balance')
+        return;
+    }
+
     const firstDonation = number('second-donated-tk');
 
-    const newDonatedValue = firstDonation + donationNumberTwo;
+    const newDonatedValue = firstDonation + donationNumber;
 
     document.getElementById('second-donated-tk').innerText = newDonatedValue;
 
-    const availableTk = number('available-tk');
-    if(availableTk < donationNumberTwo){
-        return alert('Insufficient balance');
-    }
-    const remainTaka = availableTk - donationNumberTwo;
+    
+
+    const remainTaka = availableTk - donationNumber;
 
     document.getElementById('available-tk').innerText = remainTaka;
     
+    document.getElementById('my_modal_2').showModal();
+
     // history section
     document.getElementById('history-section').classList.add('hidden');
     const historyItem = document.createElement('div');
     historyItem.className = 'border rounded-lg p-6 mb-5';
     historyItem.innerHTML = `
-    <p class="font-bold mb-5">${donationNumberTwo} Taka is Donated for Flood Relief in Feni,Bangladesh</p>
+    <p class="font-bold mb-5">${donationNumber} Taka is Donated for Flood Relief in Feni,Bangladesh</p>
     <p class="text-gray-500 text-xs">Date :${new Date()}</p>
     `;
 
@@ -89,30 +87,36 @@ document.getElementById('btn-donate-second').addEventListener('click',function()
 
 document.getElementById('btn-donate-third').addEventListener('click',function(){
 
-    const donationNumberThree = parseFloat(getDonatedValueById('input-third-amount'));
-    if(donationNumberThree < 0 || isNaN(donationNumberThree)){
-        return alert('invalid input');   
+    const donationNumber = parseFloat(getDonatedValueById('input-third-amount'));
+    const availableTk = number('available-tk');
+    if(donationNumber <= 0 || isNaN(donationNumber)){
+        alert('Invalid Donation Amount');
+        return;
+    }
+    if(donationNumber > availableTk){
+        alert('Insufficient Balance')
+        return;
     }
     const firstDonation = number('third-donated-tk');
 
-    const newDonatedValue = firstDonation + donationNumberThree;
+    const newDonatedValue = firstDonation + donationNumber;
 
     document.getElementById('third-donated-tk').innerText = newDonatedValue;
 
-    const availableTk = number('available-tk');
-    if(availableTk < donationNumberThree){
-        return alert('Insufficient balance');
-    }
-    const remainTaka = availableTk - donationNumberThree;
+    
+
+    const remainTaka = availableTk - donationNumber;
 
     document.getElementById('available-tk').innerText = remainTaka;
     
+    document.getElementById('my_modal_3').showModal();
+
     // history section
     document.getElementById('history-section').classList.add('hidden');
     const historyItem = document.createElement('div');
     historyItem.className = 'border rounded-lg p-6 mb-5';
     historyItem.innerHTML = `
-    <p class="font-bold mb-5">${donationNumberThree} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</p>
+    <p class="font-bold mb-5">${donationNumber} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</p>
     <p class="text-gray-500 text-xs">Date : ${new Date()}</p>
     `;
 
