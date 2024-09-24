@@ -117,10 +117,10 @@ historyBtn.addEventListener('click',function(){
     donationBtn.classList.remove('bg-lime-300','font-bold');
     donationBtn.classList.add('btn-outline','text-gray-500');
 
-    document.getElementById('donation-section').classList.add('hidden')
-    document.getElementById('history-section').classList.remove('hidden')
+    document.getElementById('donation-section').classList.add('hidden');
+    document.getElementById('history-section').classList.remove('hidden');
 
-    document.getElementById('footer').classList.add('hidden')
+    document.getElementById('footer').classList.add('hidden');
 
 })
 
@@ -132,9 +132,9 @@ donationBtn.addEventListener('click',function(){
     historyBtn.classList.remove('font-bold','bg-lime-300');
     historyBtn.classList.add('btn-outline','text-gray-500');
 
-    document.getElementById('donation-section').classList.remove('hidden')
-    document.getElementById('history-section').classList.add('hidden')
+    document.getElementById('donation-section').classList.remove('hidden');
+    document.getElementById('history-section').classList.add('hidden');
 
-    document.getElementById('footer').classList.remove('hidden')
+    document.getElementById('footer').classList.remove('hidden');
 
 })
