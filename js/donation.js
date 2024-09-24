@@ -8,7 +8,7 @@ document.getElementById('btn-donate-first').addEventListener('click',function(){
         return;
     }
     if(donation > availableTk){
-        alert('Insufficient Balance')
+        alert('Insufficient Balance');
         return;
     }
     // Validation end***************************************************************************
@@ -44,7 +44,7 @@ document.getElementById('btn-donate-second').addEventListener('click',function()
         return;
     }
     if(donation > availableTk){
-        alert('Insufficient Balance')
+        alert('Insufficient Balance');
         return;
     }
     // Validation end***************************************************************************
@@ -79,7 +79,7 @@ document.getElementById('btn-donate-third').addEventListener('click',function(){
         return;
     }
     if(donation > availableTk){
-        alert('Insufficient Balance')
+        alert('Insufficient Balance');
         return;
     }
     // Validation end***************************************************************************
