@@ -135,4 +135,6 @@ donationBtn.addEventListener('click',function(){
     document.getElementById('donation-section').classList.remove('hidden')
     document.getElementById('history-section').classList.add('hidden')
 
+    document.getElementById('footer').classList.remove('hidden')
+
 })
