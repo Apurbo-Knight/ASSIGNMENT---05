@@ -10,7 +10,9 @@ Browse through this extensive website of pets available for adoption, complete w
 - Sort button, Which displays pets by price in descending order.
 - Someone can give like to his favorite pet, which could be visible in a seperate section.
 # ES6 Features used
-- Arrow Function
-- Template Literals
-- Spread Operators
-- Block Scoped Variables (let, const) 
+- Arrow Function.
+- Template Literals.
+- Spread Operators.
+- Block Scoped Variables (let, const).
+# Live link ot the deployed project
+- https://assignment-a6.netlify.app/
